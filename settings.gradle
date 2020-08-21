@@ -1,0 +1,3 @@
+include ':mqttlib'
+include ':app'
+rootProject.name = "QuickMqtt"

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BFBFC5"
+        android:padding="18dp"
+        android:text="Hello World!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="连接"
+        app:layout_constraintStart_toStartOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tip" />
+
+    <Button
+        android:id="@+id/btn_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="订阅"
+        app:layout_constraintStart_toStartOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/btn_connect" />
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="发送"
+        app:layout_constraintStart_toStartOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/btn_subscribe" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="断开"
+        app:layout_constraintStart_toStartOf="@+id/tv_tip"
+        app:layout_constraintTop_toBottomOf="@+id/btn_publish" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
