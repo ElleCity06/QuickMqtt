@@ -14,13 +14,17 @@
 
 
 * 连接配置
+
         val config: MqttConfig = MqttConfig().apply {
             setBaseUrl("tcp://192.168.1.186:1883")
             setClientId("MqttAndroidClient")
             setUserName("admin")
             setPassword("admin")
         }
+
+
 * 初始化MQTT
+
      MqttManager.getInstance().init(this,config)
 
 
